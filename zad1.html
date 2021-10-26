@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="pole">
+        <input type="text" name="pole" id="formularz">
+        <button>Pokaż!</button>
+    </form>
+    <div class="wynik">
+
+    </div>
+    <script>
+        //odwołujemy sie do formularza, pobieramy dane z formularza
+        const formularz = document.querySelector('.pole');
+
+        //Odwołujemy sie do naszego diva (nazwa dowolna)
+        const div = document.querySelector('.wynik')
+        //Przypisujemy zdarzenie do naszego formularza, które uruchomi funkcje przez przeglądarke, zdarzenie znazywa się submit,
+
+        formularz.addEventListener('submit', (e) => {
+
+        //zatrzymujemy domyślną akcje przeglądarki, w przypadku formularza
+
+        e.preventDefault();
+
+        //Odwołujemy się do pola w formularzu i pobiermay jego wartość.
+        const wartoscPolaFormularza = document.querySelector('input[name="pole"]').value;
+        
+
+        //wartość pola formualrza wrzucamy do diva
+
+        div.textContent = wartoscPolaFormularza;
+        });
+    </script>
+</body>
+</html>
