@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZADANIE 1 - przykład</title>
+</head>
+<body>
+
+    <div></div>
+   <script src="Klasy/samochod.js"></script>
+   <script src="Klasy/komis.js"></script>
+   <script>
+        //działamy tutaj z samą klasą 
+
+        //PRZYKŁADOWY OBIEKT 
+        const fordzik = new Samochod('Ford', 'Mondeo', 3000, 2003, 9);
+        console.log(fordzik);
+        const polonez = new Samochod('FSO', 'Polonez', 10000, 1985, 10);
+        console.log(polonez);
+
+        console.log(fordzik.wiek());
+        console.log(polonez.wiek());
+        console.log(fordzik.koszt());
+        console.log(polonez.koszt());
+
+
+        //tworzymy nowy komis ( nowy obiekt na bazie klasy )
+
+        const scam = new komis('Scam')
+        console.log(scam);
+
+        //dodajemy I samochód
+
+        scam.dodajsamochod(fordzik);
+        console.log(scam);
+        scam.dodajsamochod(polonez);
+        console.log(scam);
+
+        //wyswietlamy dane wszystkich samochodów w komisie
+
+        scam.wyswietlsamochody();
+   </script>
+</body>
+</html>
