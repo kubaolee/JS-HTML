@@ -1,0 +1,83 @@
+
+.jeden{
+text-align: center;
+background-color: #c0c0c0;
+}
+.dwa{
+text-align: center;
+background-color: #ffff99;
+}
+.trzy{
+text-align: right;
+background-color: #800000;
+}
+.cztery{
+    text-align: right;
+    background-color: #800000;
+}
+.pięć{
+
+}
+.sześć{
+text-align: right;
+background-color: #800000;
+
+}
+.siedem{
+    text-align: right;
+background-color: #800000;
+
+}
+.osiem{
+text-align: center;
+background-color: #ffff99;
+
+}
+.dziewięć{
+text-align: center;
+background-color: #c0c0c0;
+}
+h1{
+    color: #ff0000;
+}
+h2{
+    color: #008000;
+}
+h3{
+    color: #008080;
+}
+h4{
+    color: #800080;
+}
+.jeden i{
+    color: #00ff00;
+}
+.sześć i{
+        color: #00ff00;
+    }
+.dwa i{
+    color: #00ffff;
+}
+.siedem i{
+    color: #00ffff;
+}
+.trzy i {
+    color: #808000;
+}
+.cztery i {
+    color: 0000ff;
+}
+.dziewięć i{
+ color: #0000ff;
+}
+.pięć{
+    background-color: #00ffff;
+}
+.pięć h1{
+    color: #000080;
+    text-align: center;
+}
+.pięć i{
+    color: #ffff00;
+}
+
